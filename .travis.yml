@@ -1,0 +1,10 @@
+after_script:
+  - codecov
+before_install:
+  - pip3 install -U tensorflow
+install: pip3 install -U --editable .[test]
+language: python
+python:
+  - "3.6"
+script:
+  - pytest

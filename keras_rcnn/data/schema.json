@@ -1,0 +1,75 @@
+{
+    "type": "array",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "items": {
+        "type": "object",
+        "properties": {
+            "image": {
+                "type": "object",
+                "properties": {
+                    "checksum": {
+                        "type": "string"
+                    },
+                    "pathname": {
+                        "type": "string"
+                    },
+                    "shape": {
+                        "type": "object",
+                        "properties": {
+                            "r": {
+                                "type": "integer"
+                            },
+                            "c": {
+                                "type": "integer"
+                            },
+                            "channels": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    "objects": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "bounding_box": {
+                                    "type": "object",
+                                    "properties": {
+                                        "minimum": {
+                                            "type": "object",
+                                            "properties": {
+                                                "r": {
+                                                    "type": "integer"
+                                                },
+                                                "c": {
+                                                    "type": "integer"
+                                                }
+                                            }
+                                        },
+                                        "maximum": {
+                                            "type": "object",
+                                            "properties": {
+                                                "r": {
+                                                    "type": "integer"
+                                                },
+                                                "c": {
+                                                    "type": "integer"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "category": {
+                                    "type": "string"
+                                },
+                                "mask": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
